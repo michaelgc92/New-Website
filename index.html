@@ -11,6 +11,162 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');    
+        *{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    color: rgba(203, 92, 13, 0.7);
+    font-family: "Bebas Neue", serif;
+}
+section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+section{
+    background-image: url(/componets/pexels-sasha-zilov-2148192686-30102034.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+.section-wrap {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 75vh;
+    width: 75%;
+    backdrop-filter: blur(12px);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1);
+    padding: 50px 100px;
+}
+
+.right img {
+    width: 85%;
+    
+    max-width: 500px;
+    height: auto;
+    
+}
+
+/* The Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+}
+.head-logo{
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.head-logo span {
+    color: white;
+}
+.nav-items{
+    font-size: 1.2rem;
+    letter-spacing: 2.5px;
+    margin: 15px;
+    cursor: pointer;
+    position: relative;
+}
+.nav-items::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    height: 2px;
+    background-color: white;
+    width: 100%;
+    transition: 0.3s;
+    box-shadow: 0 0 3px rgba(240, 188, 151, 0.7);
+}
+
+.nav-items:hover::before {
+    transform: translateX(-50%) scaleX(1);
+    
+}
+.nav-items:hover {
+    text-shadow: 0 0 10px rgba(240, 188, 151, 0.7);
+}
+.header-cta-btn {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid rgba(203, 92, 13, 0.7);
+    padding: 10px 35px;
+    border-radius: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.header-cta-btn:hover {
+    background-color: rgba(240, 188, 151, 0.7);
+    border-color: rgba(240, 188, 151, 0.7);
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+    align-items: center;
+    padding: 60px 20px;
+   
+    
+    
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main-text {
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.main-text span {
+    color: rgb(255, 255, 255);
+}
+.right {
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center;
+}
+.sub-text {
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.sub-text{
+    color: white;
+}
+.hero-cta-btn-btn1 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 15px 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: transparent;
+   border-radius: 25px;
+    border: 1px solid rgba(203, 92, 13, 0.7);
+}
+.hero-cta-btn-btn1:hover {
+    background-color: rgba(240, 188, 151, 0.7);
+    border-color: rgba(240, 188, 151, 0.7);
+}
     </style>
 
 </head>
